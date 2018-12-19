@@ -1,0 +1,30 @@
+{
+    "datasetNames": ["icores2019-opt"],
+    "globalConfig": {
+        "timeLimit": "00:05:00",
+        "continuousStartTimes": false
+    },
+    "solvers": [
+        {
+            "id": "CP",
+            "solverName": "CpOverlap",
+            "specializedSolverConfig": {
+            }
+        },
+        {
+            "id": "MILP-DIS",
+            "solverName": "MilpDisjunctive",
+            "specializedSolverConfig": {
+            }
+        },
+        {
+            "id": "MILP-IMP",
+            "solverName": "MilpInSpanPart",
+            "specializedSolverConfig": {
+                "optimizationWindow": 1,
+                "horizonOptimizationStrategy": "Decreasing",
+                "onBoundaryMaxThreeConstraint": true
+            }
+        }
+    ]
+}

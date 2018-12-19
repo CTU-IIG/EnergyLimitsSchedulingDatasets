@@ -1,0 +1,15 @@
+{
+    "datasetGeneratorName": "SingleOperationJobsSpannableRatio",
+    "numRepetitions": 10,
+    "randomSeed": 42,
+    "specializedPrescription": {
+        "numJobs": [10, 20, 30],
+        "numMachines": [2, 4],
+        "lengthMeteringInterval": 15,
+        "minProcessingTime": 1,
+        "maxProcessingTime": 60,
+        "energyLimit": 1000.0,
+        "powerConsumptionLbMultiplier": [0.8, 1.0, 1.2, 1.4, 1.6],
+        "spannableRatio": [0.9, 0.75, 0.5, 0.25, 0.1]
+    }
+}
